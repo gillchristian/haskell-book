@@ -75,10 +75,11 @@ mult4 = z / x + y
 -- waxOn = x * 5
 
 waxOn     = x * 5
-  where z = 7
+  where x = y ^ 2
         y = z + 8
-        x = y ^ 2
+        z = 7
+
 
 triple x = x * 3
 
-waxOff x = triple x
+waxOff = triple

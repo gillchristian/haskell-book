@@ -69,21 +69,32 @@ main = do
 drop1 :: [a] -> [a]
 drop1 = drop 1
 
+-- "Curry is awesome" -> "Curry is awesome!" 
+
 exclamate :: String -> String
-exclamate x = x ++ "!" 
+exclamate = (++ "!")
+
+-- "Curry is awesome!" -> "y"
 
 forth :: [a] -> [a]
-forth x = (x !! 3) : []
+forth x = (x !! 3) : [] -- take 1 (drop 4 x)
 
 -- "Curry is awesome!" -> "awesome!"
+
 drop9 :: [a] -> [a]
 drop9 = drop 9
 
+-- "Curry is awesome!" -> 'r'
+
 thirdLetter :: String -> Char
-thirdLetter x = x !! 2
+thirdLetter = (!! 2)
+
+-- "Curry is awesome!" 4 -> 'y'
 
 charAt :: Int -> String -> Char
-charAt i s = s !! i
+charAt i = (!! (i - 1)) -- x i = x !! (i - 1)
+
+-- "Curry is awesome" -> "awesome is Curry"
 
 rvrs :: String -> String
 rvrs x =

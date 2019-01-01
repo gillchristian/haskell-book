@@ -1,0 +1,8 @@
+(<*>) :: f (a -> b) -> f a -> f b
+
+fmap :: (a -> b) -> f a -> f b
+
+liftA2 :: (a -> b -> c) -> f a -> f b -> f c
+liftA2 f x y = f <$> x <*> y
+
+fun :: (a -> b -> ... -> x) -> [f a] -> f x

@@ -1,6 +1,6 @@
 module DogsRule
-  ( dogs )
-  where
+  ( dogs
+  ) where
 
 dogs :: IO ()
 dogs = do

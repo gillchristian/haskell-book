@@ -1,8 +1,8 @@
 module Main where
 
-import DogsRule
-import Hello
-import System.IO
+import           DogsRule
+import           Hello
+import           System.IO
 
 main :: IO ()
 main = do

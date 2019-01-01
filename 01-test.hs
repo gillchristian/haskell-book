@@ -1,6 +1,5 @@
 sayHello :: String -> IO ()
-sayHello x =
-  putStrLn ("Hello, " ++ x ++ "!")
+sayHello x = putStrLn ("Hello, " ++ x ++ "!")
 
 tripleSqr x = x * x * 3
 

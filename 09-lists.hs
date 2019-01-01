@@ -59,8 +59,7 @@ zip'' = zipWith' (,)
 -- Writing your own standard functions. Page 342
 -- 1)
 or' :: [Bool] -> Bool
-or' []     = False
-or' (x:xs) = x || or' xs
+or' = foldr (||) False
 
 -- 2)
 any' :: (a -> Bool) -> [a] -> Bool

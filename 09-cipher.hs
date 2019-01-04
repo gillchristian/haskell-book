@@ -7,12 +7,13 @@ type Offset = Int
 caesar :: Offset -> String -> String
 caesar = map . whenLeter . shift
 
-unCaesar :: Offset -> String -> String
-unCaesar = map . whenLeter . unshift
+uncaesar :: Offset -> String -> String
+uncaesar = map . whenLeter . unshift
 
 whenLeter :: (Char -> Char) -> Char -> Char
 whenLeter f c
-  | isLetter c = f c
+  | isLower c = f c
+  | isUpper c = toUpper $ f $ toLower c
   | otherwise = c
 
 a = ord 'a'

@@ -1,0 +1,7 @@
+resolver: lts-13.2
+
+packages:
+- 14-testing/addition
+- 13-building-projects/hangman
+- 13-building-projects/hello
+- 14-testing/morse

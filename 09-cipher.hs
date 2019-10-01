@@ -39,5 +39,5 @@ unshift o c
 -- tests
 tests :: IO ()
 tests = do
-  print caesar 1 "a" == "b"
-  print caesar 25 "a" == "z"
+  print $ caesar 1 "a" == "b"
+  print $ caesar 25 "a" == "z"
